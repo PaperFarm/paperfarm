@@ -1,0 +1,98 @@
+{
+ "cases": [
+  {
+   "Dom": "exchange",
+   "Primary": "RegisterSessionKey",
+   "Msg": {
+    "deadline": 1791969775,
+    "expiry": 1794111270,
+    "feeAddress": "0x0000000000000000000000000000000000000000",
+    "key": "0x00000000000000000000000000000000000000AA",
+    "nonce": "123456789"
+   },
+   "Signed": {
+    "deadline": "1791969775",
+    "expiry": "1794111270",
+    "feeAddress": "0x0000000000000000000000000000000000000000",
+    "key": "0x00000000000000000000000000000000000000aa",
+    "nonce": "123456789",
+    "r": "0x8999fc91d8451fc0fc1b271da43ca885c93cd7e2638ccf823bbd9b2369dd5f16",
+    "s": "0x2d9576c91f7577a170f73a1fc92c363b477f055e21fabd0e5423f893548c891f",
+    "user": "0x2c7536e3605d9c16a7a3d7b1898e529396a65c23",
+    "v": "28"
+   },
+   "ID": "0x42e416b08c566b89d52b6df022fafd813de81bbe1b6abe29df8b566f2b7e4dff"
+  },
+  {
+   "Dom": "exchange",
+   "Primary": "OpenPosition",
+   "Msg": {
+    "deadline": 1791969775,
+    "instrumentId": 0,
+    "isLong": true,
+    "leverage": 777,
+    "nonce": "340282366920938463463374607431768211455",
+    "size": "12340000000000000000",
+    "useDebt": false
+   },
+   "Signed": {
+    "deadline": "1791969775",
+    "instrumentId": "0",
+    "isLong": true,
+    "leverage": "777",
+    "nonce": "340282366920938463463374607431768211455",
+    "r": "0x544a68648d858f2185dbc99aa1a09ace2cc95419974db397c4dd8df3bb4b93c0",
+    "s": "0x01861e9da7fa3cd6be5c0a05160489ed153d327946ac13fce941641b663089e4",
+    "size": "12340000000000000000",
+    "useDebt": false,
+    "user": "0x2c7536e3605d9c16a7a3d7b1898e529396a65c23",
+    "v": "27"
+   },
+   "ID": "0xdd2d54606819782d9fb5486e25a8d16d2081b0acd5abcc00abe0a7f2932376a7"
+  },
+  {
+   "Dom": "exchange",
+   "Primary": "Close",
+   "Msg": {
+    "deadline": 1791969775,
+    "nonce": "42",
+    "positionIds": [
+     "577598",
+     "577599"
+    ]
+   },
+   "Signed": {
+    "deadline": "1791969775",
+    "nonce": "42",
+    "positionIds": [
+     "577598",
+     "577599"
+    ],
+    "r": "0xa4b47ac12f46993ba04e166713f5fff34f1fb78ba8af467f3557b99b14c97bbd",
+    "s": "0x1400c7ea385d644052e4e840a06bf3542305c6b4bf9fc8e880144348db6632e8",
+    "user": "0x2c7536e3605d9c16a7a3d7b1898e529396a65c23",
+    "v": "27"
+   },
+   "ID": "0x182c8c5e3ad8aada24098d409a7c71cf562dccd39391128f17e4ad80b6d33a60"
+  },
+  {
+   "Dom": "cancel",
+   "Primary": "CancelIntent",
+   "Msg": {
+    "deadline": 1791969775,
+    "intentId": "0x0489a09da2b02ee4bf417ddc2b9a15f3ab609d5a7a4ebd5b20fe2f70ca2176ae"
+   },
+   "Signed": {
+    "deadline": "1791969775",
+    "intentId": "0x0489a09da2b02ee4bf417ddc2b9a15f3ab609d5a7a4ebd5b20fe2f70ca2176ae",
+    "r": "0x0658c13f7558788a0acbca3dc481fe425153ba8857ddac18e248c64eb1a467e6",
+    "s": "0x4e78b858bda74e9f454842dd9721d849481a84eb5d08aefb2f2cc71c70ff5457",
+    "user": "0x2c7536e3605d9c16a7a3d7b1898e529396a65c23",
+    "v": "27"
+   },
+   "ID": "0xa95a29c112474621dd92bdfc950205e034770935b62b90aaf2a8b9398d38b4b4"
+  }
+ ],
+ "key": "0x4c0883a69102937d6231471b5dbb6204fe5129617082792ae468d01a3f362318",
+ "user": "0x2c7536e3605d9c16a7a3d7b1898e529396a65c23"
+}

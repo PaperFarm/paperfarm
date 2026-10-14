@@ -1,0 +1,130 @@
+/* Design tokens: the paper light theme and the night theme, spacing, type and control scales. */
+/* paperfarm wears Papertrade's design language: paper light by default, its night theme when the system (or the toggle) asks.
+   Every size comes from the scales below. Do not write a raw px for spacing, type or control height outside :root. */
+:root {
+  /* spacing: a 4px base */
+  --s0: 2px;
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 20px;
+  --s6: 24px;
+  --s8: 32px;
+  --s10: 40px;
+  /* type */
+  --t-label: 9.5px; /* uppercase tracked micro labels, axes */
+  --t-xs: 10px; /* sub-lines, hints */
+  --t-sm: 11px; /* secondary text, labels */
+  --t-md: 12px; /* body, tables, controls */
+  --t-lg: 13px; /* row figures, emphasis */
+  --t-xl: 15px; /* section titles, input values */
+  --t-2xl: 18px; /* figures, page titles, wordmark */
+  --t-3xl: 24px; /* lead figures */
+  /* control heights */
+  --h-xs: 22px;
+  --h-sm: 26px;
+  --h-md: 30px;
+  --h-lg: 34px;
+  --h-xl: 36px;
+  --h-bar: 44px;
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 8px;
+  --i-sm: 12px;
+  --i-md: 16px; /* icons */
+  --side-w: 320px;
+
+  --page: rgb(237 229 208);
+  --panel: rgb(244 236 216);
+  --raised: rgb(250 246 237);
+  --sunken: rgb(232 222 200);
+  --future: rgb(244 236 216 / 0.7);
+  --ink: rgb(42 37 32);
+  --ink-rgb: 42 37 32;
+  --ink-2: rgb(95 86 75);
+  --muted: rgb(122 112 96);
+  --border: rgb(212 203 186);
+  --border-2: rgb(196 185 164);
+  --pos: rgb(45 95 58);
+  --pos-rgb: 45 95 58;
+  --neg: rgb(139 32 32);
+  --neg-rgb: 139 32 32;
+  --warm: rgb(122 98 53);
+  --warm-rgb: 122 98 53;
+  --on-pos: rgb(250 246 237);
+  --buy: var(--pos);
+  --buy-hover: rgb(33 74 44);
+  --track: linear-gradient(90deg, var(--pos), var(--muted), var(--neg));
+  --header: var(--page);
+  --chip: rgb(233 225 205);
+  --sel: rgb(221 223 211);
+  --candle-up: var(--raised);
+  --cursor: var(--neg);
+  --shadow: 0 6px 20px rgb(var(--ink-rgb) / 0.12);
+  --sans: 'Inter Variable', Inter, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --page: rgb(13 18 41);
+    --panel: rgb(23 29 61);
+    --raised: rgb(39 47 90);
+    --sunken: rgb(8 12 29);
+    --future: rgb(23 29 61 / 0.6);
+    --ink: rgb(244 234 242);
+    --ink-rgb: 244 234 242;
+    --ink-2: rgb(199 196 216);
+    --muted: rgb(164 172 203);
+    --border: rgb(70 83 130);
+    --border-2: rgb(93 106 156);
+    --pos: rgb(145 216 189);
+    --pos-rgb: 145 216 189;
+    --neg: rgb(240 160 178);
+    --neg-rgb: 240 160 178;
+    --warm: rgb(228 180 206);
+    --warm-rgb: 228 180 206;
+    --on-pos: rgb(14 19 41);
+    --buy: linear-gradient(135deg, rgb(145 216 189), rgb(197 201 242));
+    --buy-hover: linear-gradient(135deg, rgb(165 230 205), rgb(214 217 250));
+    --track: linear-gradient(90deg, var(--pos), rgb(184 197 255) 50%, var(--neg));
+    --header: rgb(17 24 50);
+    --chip: rgb(21 27 56);
+    --sel: rgb(64 76 128);
+    --candle-up: rgb(23 29 61);
+    --cursor: var(--warm);
+    --shadow: 0 18px 44px rgb(2 5 18 / 0.48);
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --page: rgb(13 18 41);
+  --panel: rgb(23 29 61);
+  --raised: rgb(39 47 90);
+  --sunken: rgb(8 12 29);
+  --future: rgb(23 29 61 / 0.6);
+  --ink: rgb(244 234 242);
+  --ink-rgb: 244 234 242;
+  --ink-2: rgb(199 196 216);
+  --muted: rgb(164 172 203);
+  --border: rgb(70 83 130);
+  --border-2: rgb(93 106 156);
+  --pos: rgb(145 216 189);
+  --pos-rgb: 145 216 189;
+  --neg: rgb(240 160 178);
+  --neg-rgb: 240 160 178;
+  --warm: rgb(228 180 206);
+  --warm-rgb: 228 180 206;
+  --on-pos: rgb(14 19 41);
+  --buy: linear-gradient(135deg, rgb(145 216 189), rgb(197 201 242));
+  --buy-hover: linear-gradient(135deg, rgb(165 230 205), rgb(214 217 250));
+  --track: linear-gradient(90deg, var(--pos), rgb(184 197 255) 50%, var(--neg));
+  --header: rgb(17 24 50);
+  --chip: rgb(21 27 56);
+  --sel: rgb(64 76 128);
+  --candle-up: rgb(23 29 61);
+  --cursor: var(--warm);
+  --shadow: 0 18px 44px rgb(2 5 18 / 0.48);
+  color-scheme: dark;
+}
